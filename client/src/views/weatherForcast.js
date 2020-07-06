@@ -4,7 +4,7 @@ import React from 'react';
 const WeatherForcast = () => {
 
    return (
-      <div>
+      <div style={{ width: '50%', margin: '10px auto', alignContent: 'center'}}>
          <div className='header'>
             <h2 className="text-primary">Weather Forcast</h2>
          </div>
@@ -14,10 +14,10 @@ const WeatherForcast = () => {
          </div>
 
          <div className='zipcodeInput'>
-	  <form method='POST' action='/search-location'>
-	     <input type='text' placeholder='Enter zipcode..' name='zipcode'/>
-	     <button>ENTER</button>
-	  </form>
+            <form method='POST' action='/search-location'>
+               <input type='text' placeholder='Enter zipcode..' name='zipcode'/>
+               <button>ENTER</button>
+            </form>
          </div>
       </div>
    )

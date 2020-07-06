@@ -3,25 +3,28 @@ import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   return (
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-  <Link  class="navbar-brand" to="/">Project One</Link >
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
+    <nav className="navbar navbar-expand-md navbar-dark bg-dark">
+  <Link  className="navbar-brand" to="/">Project One</Link >
+  <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <span className="navbar-toggler-icon"></span>
   </button>
-  <div class="collapse navbar-collapse" id="navbarText">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item">
-        <Link  class="nav-link" to="/">Home</Link >
+  <div className="collapse navbar-collapse" id="navbarText">
+    <ul className="navbar-nav mr-auto">
+      <li className="nav-item">
+        <Link  className="nav-link" to="/">Home</Link >
       </li>
-      <li class="nav-item">
-        <Link  class="nav-link" to="/weatherForcast">Weather Forcast</Link >
+      <li className="nav-item">
+        <Link  className="nav-link" to="/weatherForcast">Weather Forcast</Link >
+      </li>
+      <li className="nav-item">
+        <Link  className="nav-link" to="/user">User</Link >
       </li>
     </ul>
-    <span class="navbar-text">
-        <Link  class="nav-link" to="#">Log in</Link >
+    <span className="navbar-text">
+        <Link  className="nav-link" to="#">Log in</Link >
     </span>
-    <span class="navbar-text">
-        <Link  class="nav-link" to="#">Sign Up</Link >
+    <span className="navbar-text">
+        <Link  className="nav-link" to="#">Sign Up</Link >
     </span>
   </div>
 </nav>

@@ -9,6 +9,7 @@ import Navbar from './components/navbar';
 //views
 import Home from './views/home';
 import WeatherForcast from './views/weatherForcast';
+import UserList from './views/user';
 
 ReactDOM.render(
   <Router>
@@ -16,6 +17,7 @@ ReactDOM.render(
       <Navbar />
       <Route exact path='/' component={Home} />
       <Route exact path='/weatherForcast' component={WeatherForcast} />
+      <Route exact path='/user' component={UserList} />
     </App>
   </Router>
   , document.getElementById('root')
